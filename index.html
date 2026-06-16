@@ -2,1339 +2,1657 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="no-referrer">
-  <meta name="description" content="Best Amazon deals today – June 15, 2026. Exclusive promo codes, sale prices, and top-rated products updated daily.">
-  <meta property="og:title" content="Best Amazon Deals – June 15, 2026">
-  <meta property="og:description" content="Shop today's top Amazon deals with promo codes and deep discounts.">
-  <title>Best Amazon Deals Today – June 15, 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Best Amazon deals for June 16, 2026 — up to 80% off on fashion, beauty, home, kitchen, outdoor, kids, and more. Updated daily with exclusive promo codes.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Amazon Deals June 16, 2026 — Daily Deals &amp; Promo Codes">
+  <meta property="og:description" content="99 hand-picked Amazon deals across 1 categories. Save big today!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cam444772-bot.github.io/amazon-deals/">
+  <title>Amazon Deals June 16, 2026 — Daily Deals &amp; Promo Codes | Best Sales Today</title>
   <style>
     :root {
-      --primary: #FF9900;
-      --dark:    #131921;
-      --card-bg: #fff;
-      --bg:      #f3f3f3;
-      --text:    #111;
-      --sub:     #555;
-      --radius:  10px;
+      --accent:#e47911; --bg:#f4f4f4; --card-bg:#fff;
+      --text:#111; --muted:#666; --radius:10px;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); }
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Segoe UI',Arial,sans-serif; background:var(--bg); color:var(--text); }
 
-    /* Sticky Nav */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      background: var(--dark); padding: 10px 16px;
-      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    /* ── sticky nav ── */
+    .sticky-nav {
+      position:sticky; top:0; z-index:999;
+      background:#131921; padding:8px 12px;
+      overflow-x:auto; white-space:nowrap;
+      scrollbar-width:thin;
     }
-    nav .brand { color: var(--primary); font-weight: 700; font-size: 1.1rem; margin-right: 16px; white-space: nowrap; }
-    nav a { color: #ddd; text-decoration: none; font-size: 0.8rem; white-space: nowrap;
-             padding: 4px 8px; border-radius: 4px; transition: background 0.2s; }
-    nav a:hover { background: var(--primary); color: #000; }
-
-    header {
-      background: linear-gradient(135deg, var(--dark) 0%, #232f3e 100%);
-      color: #fff; text-align: center; padding: 48px 16px 32px;
+    .sticky-nav a {
+      color:#fff; text-decoration:none; font-size:.82rem;
+      margin-right:14px; opacity:.85; transition:opacity .2s;
     }
-    header h1 { font-size: 2rem; margin-bottom: 8px; }
-    header p  { color: #ccc; font-size: 1rem; }
+    .sticky-nav a:hover { opacity:1; color:var(--accent); }
 
-    .category-section { max-width: 1280px; margin: 32px auto; padding: 0 16px; }
-    .category-section h2 { font-size: 1.4rem; margin-bottom: 16px; padding-bottom: 8px;
-                            border-bottom: 3px solid var(--primary); }
+    /* ── hero ── */
+    .hero {
+      background:linear-gradient(135deg,#131921 0%,#232f3e 100%);
+      color:#fff; text-align:center; padding:48px 20px 36px;
+    }
+    .hero h1 { font-size:2rem; margin-bottom:.4em; }
+    .hero p  { font-size:1rem; opacity:.8; max-width:520px; margin:0 auto; }
 
-    .cards-grid {
-      display: grid;
+    /* ── category sections ── */
+    .cat-section { padding:30px 16px 10px; max-width:1400px; margin:0 auto; }
+    .cat-section h2 {
+      font-size:1.4rem; border-left:4px solid var(--accent);
+      padding-left:10px; margin-bottom:18px;
+    }
+
+    /* ── deal grid ── */
+    .deal-grid {
+      display:grid;
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 20px;
+      gap:18px;
     }
 
+    /* ── deal card ── */
     .deal-card {
-      background: var(--card-bg); border-radius: var(--radius);
-      box-shadow: 0 2px 8px rgba(0,0,0,.08); overflow: hidden;
-      display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s;
+      background:var(--card-bg); border-radius:var(--radius);
+      box-shadow:0 2px 8px rgba(0,0,0,.09);
+      display:flex; flex-direction:column;
+      transition:transform .2s, box-shadow .2s;
+      overflow:hidden;
     }
-    .deal-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,.14); }
+    .deal-card:hover { transform:translateY(-3px); box-shadow:0 6px 18px rgba(0,0,0,.14); }
 
-    .card-img { background: #f9f9f9; display: flex; align-items: center; justify-content: center;
-                 height: 200px; overflow: hidden; }
-    .card-img img { max-height: 100%; max-width: 100%; object-fit: contain; }
-    .no-img { color: #aaa; font-size: 0.85rem; }
+    .card-img { width:100%; height:220px; overflow:hidden; background:#eee; }
+    .card-img img { width:100%; height:100%; object-fit:cover; display:block; }
+    .no-img { display:flex; align-items:center; justify-content:center;
+               height:100%; color:#aaa; font-size:.85rem; }
 
-    .card-body { padding: 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
-    .product-name { font-size: 0.88rem; font-weight: 600; color: var(--text); line-height: 1.35; flex: 1; }
-    .stars { color: #e47911; font-size: 0.85rem; }
+    .card-body { padding:12px; display:flex; flex-direction:column; gap:7px; flex:1; }
+    .prod-name { font-size:.88rem; line-height:1.35; font-weight:600;
+                  display:-webkit-box; -webkit-line-clamp:3;
+                  -webkit-box-orient:vertical; overflow:hidden; }
 
-    .price-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
-    .sale-price   { font-size: 1.05rem; font-weight: 700; color: #B12704; }
-    .reg-price    { font-size: 0.85rem; color: var(--sub); }
-    .discount-badge { background: #B12704; color: #fff; font-size: 0.75rem;
-                       padding: 2px 6px; border-radius: 4px; font-weight: 700; }
+    .stars { color:#e47911; font-size:.82rem; }
 
-    .promo-badge { background: #fffbe6; border: 1px dashed #e47911; border-radius: 6px;
-                    padding: 4px 8px; font-size: 0.82rem; color: #856404; }
+    .price-row { display:flex; flex-wrap:wrap; align-items:center; gap:6px; }
+    .sale-price  { font-size:1.1rem; font-weight:700; color:#B12704; }
+    .reg-price   { font-size:.82rem; color:var(--muted); text-decoration:line-through; }
+    .disc-badge  {
+      background:#e47911; color:#fff; font-size:.74rem;
+      padding:2px 6px; border-radius:4px; font-weight:700;
+    }
+    .promo-badge {
+      background:#fff3cd; color:#856404; font-size:.8rem;
+      padding:4px 8px; border-radius:5px; border:1px solid #ffc107;
+    }
 
     .shop-btn {
-      display: block; text-align: center; margin-top: auto;
-      background: var(--primary); color: #000; font-weight: 700;
-      padding: 9px 0; border-radius: 6px; text-decoration: none;
-      font-size: 0.9rem; transition: background 0.2s;
+      display:inline-block; margin-top:auto; padding:9px 14px;
+      background:var(--accent); color:#fff; text-decoration:none;
+      border-radius:6px; font-weight:700; font-size:.88rem; text-align:center;
+      transition:background .2s;
     }
-    .shop-btn:hover { background: #e68a00; }
+    .shop-btn:hover { background:#c56f00; }
 
-    /* FAQ */
-    .faq-section { max-width: 860px; margin: 40px auto 20px; padding: 0 16px; }
-    .faq-section h2 { font-size: 1.4rem; margin-bottom: 16px; }
-    details { border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
-    summary { padding: 14px 16px; cursor: pointer; font-weight: 600; background: #fff;
-               list-style: none; user-select: none; }
-    summary::-webkit-details-marker { display: none; }
-    summary::before { content: "+ "; color: var(--primary); }
-    details[open] summary::before { content: "– "; }
-    details p { padding: 12px 16px; background: #fafafa; font-size: 0.92rem; line-height: 1.6; }
+    /* ── FAQ ── */
+    .faq-section { max-width:760px; margin:40px auto; padding:0 16px 40px; }
+    .faq-section h2 { font-size:1.4rem; margin-bottom:18px; }
+    details { border:1px solid #ddd; border-radius:var(--radius);
+               margin-bottom:10px; padding:12px 16px; background:#fff; }
+    details summary { font-weight:600; cursor:pointer; font-size:.95rem; }
+    details p { margin-top:8px; font-size:.9rem; color:var(--muted); line-height:1.5; }
 
+    /* ── footer ── */
     footer {
-      background: var(--dark); color: #aaa; text-align: center;
-      padding: 24px 16px; font-size: 0.82rem; line-height: 1.7;
+      background:#131921; color:#ccc; text-align:center;
+      padding:24px 16px; font-size:.82rem; line-height:1.6;
     }
-    footer a { color: var(--primary); }
+    footer a { color:var(--accent); }
 
-    @media (max-width: 480px) {
-      header h1 { font-size: 1.4rem; }
-      .cards-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+    @media(max-width:600px) {
+      .hero h1 { font-size:1.4rem; }
+      .deal-grid { grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:12px; }
+      .card-img { height:170px; }
     }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Best Amazon Deals Today – June 15, 2026",
-    "description": "Today’s top Amazon deals, promo codes, and discounts updated daily.",
-    "url": "https://cam444772-bot.github.io/amazon-deals/"
-  }
-  </script>
 </head>
 <body>
 
-<nav>
-  <span class="brand">🛍️ Amazon Deals</span>
-  <a href="#women-tops">👚 Women's Tops</a>
-<a href="#women-dresses">👗 Women's Dresses & Jumpsuits</a>
-<a href="#sets-lounge">🧦 Sets & Lounge</a>
-<a href="#bottoms">👖 Bottoms</a>
-<a href="#men">👔 Men's</a>
-<a href="#swimwear">🩱 Swimwear</a>
-<a href="#shoes-accessories">👟 Shoes & Accessories</a>
-<a href="#jewelry">💍 Jewelry</a>
-<a href="#beauty">💄 Beauty</a>
-<a href="#bags-organizers">👜 Bags & Organizers</a>
-<a href="#kitchen-home">🍳 Kitchen & Home</a>
-<a href="#fans-appliances">🌀 Fans & Appliances</a>
-<a href="#cleaning">🧹 Cleaning</a>
-<a href="#outdoor-sports">⛺ Outdoor & Sports</a>
-<a href="#auto">🚗 Auto</a>
-<a href="#misc">🛒 Miscellaneous</a>
-  <a href="#faq">FAQ</a>
+<!-- Sticky navigation -->
+<nav class="sticky-nav" aria-label="Category navigation">
+<a href="#misc">✨ Misc</a>
+
 </nav>
 
-<header>
-  <h1>🛍️ Best Amazon Deals Today</h1>
-  <p>Updated June 15, 2026 &nbsp;·&nbsp; 99 deals across 16 categories</p>
+<!-- Hero -->
+<header class="hero">
+  <h1>🛍️ Best Amazon Deals — June 16, 2026</h1>
+  <p>99 hand-picked deals across 1 categories. Fresh promo codes &amp; discounts updated daily.</p>
 </header>
 
+<main>
 
-  <section id="women-tops" class="category-section">
-    <h2>👚 Women's Tops</h2>
-    <div class="cards-grid">
-      
+  <section id="misc" class="cat-section">
+    <h2>✨ Misc</h2>
+    <div class="deal-grid">
+
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ftMrX3" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71vofNz8GmL._AC_SL1500_.jpg" alt="GRACE KARIN Women Mesh Boho Tops" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71vofNz8GmL._AC_SL1500_.jpg" alt="https://amzn.to/4ftMrX3" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">GRACE KARIN Women Mesh Boho Tops</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$9.02-12.5</span> <span class="reg-price"><s>$18.04-24.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>FCJH968U</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ftMrX3" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4ftMrX3</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4oe9Wpk" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81XpOzmOVxL._AC_SL1500_.jpg" alt="XIEERDUO Casual V Neck Rolled Sleeve T Shirts" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81XpOzmOVxL._AC_SL1500_.jpg" alt="https://amzn.to/4oe9Wpk" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">XIEERDUO Casual V Neck Rolled Sleeve T Shirts</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$5.99</span> <span class="reg-price"><s>$14.99</s></span> <span class="discount-badge">60% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>ISCRD577</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4oe9Wpk" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4oe9Wpk</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4v4rXZU" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81JZ82QJhNL._AC_SL1500_.jpg" alt="GRACE KARIN Women Boho Tops" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81JZ82QJhNL._AC_SL1500_.jpg" alt="https://amzn.to/4v4rXZU" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">GRACE KARIN Women Boho Tops</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$9.99-12.49</span> <span class="reg-price"><s>$19.99-24.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>RTR6LLNC</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4v4rXZU" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4v4rXZU</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/49Q7orC" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81VKCD3eTLL._AC_SL1500_.jpg" alt="WEESO Womens Summer Top" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81VKCD3eTLL._AC_SL1500_.jpg" alt="https://amzn.to/49Q7orC" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">WEESO Womens Summer Top</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$4.99</span> <span class="reg-price"><s>$9.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>CP7ECVR2</strong></div>
-        <a class="shop-btn" href="https://amzn.to/49Q7orC" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/49Q7orC</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4uqXyUA" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/91RKJ+3qaML._AC_SL1500_.jpg" alt="WIHOLL Cap Sleeve Sweater Top" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/91RKJ+3qaML._AC_SL1500_.jpg" alt="https://amzn.to/4uqXyUA" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">WIHOLL Cap Sleeve Sweater Top</p>
-        <div class="stars">★★★★☆ 4.1</div>
-        <div class="price-row"><span class="sale-price">$5.59</span> <span class="reg-price"><s>$19.99</s></span> <span class="discount-badge">61% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>2JHB4AWO</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4uqXyUA" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4uqXyUA</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vEPiBi" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61lfQxqUilL._AC_SL1500_.jpg" alt="PINSPARK Womens Soft Workout Tops" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61lfQxqUilL._AC_SL1500_.jpg" alt="https://amzn.to/4vEPiBi" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">PINSPARK Womens Soft Workout Tops</p>
-        <div class="stars">★★★★½ 4.6</div>
-        <div class="price-row"><span class="sale-price">$6.99</span> <span class="reg-price"><s>$9.99-14.99</s></span> <span class="discount-badge">53% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>7XOBTHO8</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vEPiBi" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4vEPiBi</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3QsEd7o" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61PbDNhAlvL._AC_SL1500_.jpg" alt="UNCLECAT Womens Denim Vest Tops" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61PbDNhAlvL._AC_SL1500_.jpg" alt="https://amzn.to/3QsEd7o" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">UNCLECAT Womens Denim Vest Tops</p>
-        <div class="stars">★★★★☆ 4.1</div>
-        <div class="price-row"><span class="sale-price">$19.79</span> <span class="reg-price"><s>$32.98</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>FDQ2DCGG</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3QsEd7o" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/3QsEd7o</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4gbpVm1" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81UpY4UP3wL._AC_SL1500_.jpg" alt="GKBK Women Summer V Neck T Shirts" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81UpY4UP3wL._AC_SL1500_.jpg" alt="https://amzn.to/4gbpVm1" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">GKBK Women Summer V Neck T Shirts</p>
-        <div class="stars">★★★★½ 4.5</div>
-        <div class="price-row"><span class="sale-price">$5.99-7.98</span> <span class="reg-price"><s>$9.99-13.3</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>IXDRD6AR</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4gbpVm1" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4gbpVm1</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4xkQdIy" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81-Qvv-fS4L._AC_SL1500_.jpg" alt="BTFBM Womens Short Sleeve Sweater" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81-Qvv-fS4L._AC_SL1500_.jpg" alt="https://amzn.to/4xkQdIy" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">BTFBM Womens Short Sleeve Sweater</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$9.99</span> <span class="reg-price"><s>$19.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>50M7OZXS</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4xkQdIy" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4xkQdIy</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4aD4syG" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81Ok1l9iIjL._AC_SL1500_.jpg" alt="POLIRO Women Denim Shirt" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81Ok1l9iIjL._AC_SL1500_.jpg" alt="https://amzn.to/4aD4syG" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">POLIRO Women Denim Shirt</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$19.99</span> <span class="reg-price"><s>$39.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>RD2KZ7BF</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4aD4syG" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4aD4syG</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ohRoVb" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/712nql+kJKL._AC_SL1500_.jpg" alt="UNCLECAT Womens Short Sleeve Tops" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/712nql+kJKL._AC_SL1500_.jpg" alt="https://amzn.to/4ohRoVb" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">UNCLECAT Womens Short Sleeve Tops</p>
-        <div class="stars">★★★★½ 4.5</div>
-        <div class="price-row"><span class="sale-price">$6.99</span> <span class="reg-price"><s>$14.99</s></span> <span class="discount-badge">53% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>C52RBZO4</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ohRoVb" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4ohRoVb</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4g9WJvB" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71d5-WkI15L._AC_SL1500_.jpg" alt="REORIA Womens Square Neck Tank Top" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71fJ-ZGZ-wL._AC_SL1500_.jpg" alt="https://amzn.to/4uqE822" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">REORIA Womens Square Neck Tank Top</p>
-        <div class="stars">★★★★☆ 4.2</div>
-        <div class="price-row"><span class="sale-price">$6.49</span> <span class="reg-price"><s>$12.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>ESCLR8QD</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4g9WJvB" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4uqE822</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vbZEbO" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71Wovy+v6RL._AC_SL1500_.jpg" alt="TRENDY QUEEN Summer Tops" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71d5-WkI15L._AC_SL1500_.jpg" alt="https://amzn.to/4g9WJvB" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">TRENDY QUEEN Summer Tops</p>
-        <div class="stars">★★★½☆ 3.9</div>
-        <div class="price-row"><span class="sale-price">$4.99</span> <span class="reg-price"><s>$9.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>ZPW6RWTI</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vbZEbO" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4g9WJvB</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4exU5P9" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71xgNhTIZZL._AC_SL1500_.jpg" alt="CAFFAN USA Tank Top" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71Wovy+v6RL._AC_SL1500_.jpg" alt="https://amzn.to/4vbZEbO" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">CAFFAN USA Tank Top</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$5.99</span> <span class="reg-price"><s>$11.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>UDEF6M9U</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4exU5P9" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4vbZEbO</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4olsHXV" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71+mGbH5ThL._AC_SL1500_.jpg" alt="TANKANEO 2 Piece Sweater Sets" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71xgNhTIZZL._AC_SL1500_.jpg" alt="https://amzn.to/4exU5P9" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">TANKANEO 2 Piece Sweater Sets</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$14.99</span> <span class="reg-price"><s>$29.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>Y6ZQUSTS</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4olsHXV" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4exU5P9</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ebxC9g" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71wXuc0zFdL._AC_SL1500_.jpg" alt="FLOWYAIR Oversized Striped Long Sleeve Shirts" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/51aRWp77I3L._AC_SL1500_.jpg" alt="https://amzn.to/4elNwhA" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">FLOWYAIR Oversized Striped Long Sleeve Shirts</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$13.74</span> <span class="reg-price"><s>$24.99</s></span> <span class="discount-badge">45% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>BXHBOWPO</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ebxC9g" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4elNwhA</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4uXDUjV" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61vJHYxtiGL._AC_SL1500_.jpg" alt="SOOTHFEEL Womens Sun Shirts" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61CSulJBS6L._AC_SL1500_.jpg" alt="https://amzn.to/4vb1JVB" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">SOOTHFEEL Womens Sun Shirts</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$9.89</span> <span class="reg-price"><s>$18.99</s></span> <span class="discount-badge">48% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>6THN6JCG</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4uXDUjV" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4vb1JVB</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ebxPt4" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71ndcrBPg+L._AC_SL1500_.jpg" alt="G GRADUAL Mens Fishing Shirts" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61XvYjiispL._AC_SL1500_.jpg" alt="https://amzn.to/4ezixQ4" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">G GRADUAL Mens Fishing Shirts</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$14.99</span> <span class="reg-price"><s>$35.99</s></span> <span class="discount-badge">58% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>WTHC7A6U</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ebxPt4" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4ezixQ4</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3QyZmga" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61MH9TSygNL._AC_SL1500_.jpg" alt="UNCLECAT Mens Short Sleeve T-Shirts" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61IQO2H81BL._AC_SL1500_.jpg" alt="https://amzn.to/4ewoYn8" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">UNCLECAT Mens Short Sleeve T-Shirts</p>
-        <div class="stars">★★★★☆ 4.2</div>
-        <div class="price-row"><span class="sale-price">$6.49</span> <span class="reg-price"><s>$13.99</s></span> <span class="discount-badge">54% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>IT9924V4</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3QyZmga" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4ewoYn8</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3PRd2mD" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81wkjnLWkeL._AC_SL1500_.jpg" alt="G GRADUAL Mens Workout Dry Fit Shirts" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81hAVlaRbEL._AC_SL1500_.jpg" alt="https://amzn.to/4xf01nL" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">G GRADUAL Mens Workout Dry Fit Shirts</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$9.85</span> <span class="reg-price"><s>$16.99</s></span> <span class="discount-badge">42% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>OWJN8PTO</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3PRd2mD" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4xf01nL</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4uoNSJW" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71E0DeO2DHL._AC_SL1500_.jpg" alt="G GRADUAL Hiking Workout Shirts" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71+mGbH5ThL._AC_SL1500_.jpg" alt="https://amzn.to/4olsHXV" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">G GRADUAL Hiking Workout Shirts</p>
-        <div class="stars">★★★★½ 4.8</div>
-        <div class="price-row"><span class="sale-price">$9.85</span> <span class="reg-price"><s>$19.99</s></span> <span class="discount-badge">51% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>VTNCGH8L</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4uoNSJW" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4olsHXV</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4fxa7d6" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71+Xyv4JqCL._AC_SL1500_.jpg" alt="ATOPICK Waist Fan" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81PeAY--LRL._AC_SL1500_.jpg" alt="https://amzn.to/4dZ6sUj" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">ATOPICK Waist Fan</p>
-        <div class="stars">★★★★½ 4.8</div>
-        <div class="price-row"><span class="sale-price">$9.99</span> <span class="reg-price"><s>$19.98</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>XWSXBDGA</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4fxa7d6" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4dZ6sUj</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
 
     <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4fBYVvM" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61+UpDHrViL._AC_SL1500_.jpg" alt="ISDGER 10Pack Glass Cooktop Cleaner Sponge" loading="lazy" onerror="this.style.display='none'"></a></div>
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71g2RAm2vUL._AC_SL1500_.jpg" alt="https://amzn.to/4fBB9Qy" loading="lazy"></div>
+      </a>
       <div class="card-body">
-        <p class="product-name">ISDGER 10Pack Glass Cooktop Cleaner Sponge</p>
-        <div class="stars">★★★★☆ 4.1</div>
-        <div class="price-row"><span class="sale-price">$5.99</span> <span class="reg-price"><s>$9.99</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>ISDGER40OFF</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4fBYVvM" target="_blank" rel="noopener noreferrer">Shop Now →</a>
+        <p class="prod-name">https://amzn.to/4fBB9Qy</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71blGrIEZRL._AC_SL1500_.jpg" alt="https://amzn.to/3QwZj4z" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3QwZj4z</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/51yWGuuTFXL._AC_SL1500_.jpg" alt="https://amzn.to/4xlf5jz" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4xlf5jz</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71B7e4SSuUL._AC_SL1500_.jpg" alt="https://amzn.to/4xiJdvN" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4xiJdvN</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71vkAHj8qkL._AC_SL1500_.jpg" alt="https://amzn.to/4v10qZr" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4v10qZr</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/51b0hSk-IoL._AC_SL1500_.jpg" alt="https://amzn.to/4dXUNFg" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4dXUNFg</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71wXuc0zFdL._AC_SL1500_.jpg" alt="https://amzn.to/4ebxC9g" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4ebxC9g</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61vJHYxtiGL._AC_SL1500_.jpg" alt="https://amzn.to/4uXDUjV" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4uXDUjV</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71ndcrBPg+L._AC_SL1500_.jpg" alt="https://amzn.to/4ebxPt4" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4ebxPt4</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61MH9TSygNL._AC_SL1500_.jpg" alt="https://amzn.to/3QyZmga" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3QyZmga</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81wkjnLWkeL._AC_SL1500_.jpg" alt="https://amzn.to/3PRd2mD" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3PRd2mD</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71E0DeO2DHL._AC_SL1500_.jpg" alt="https://amzn.to/4uoNSJW" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4uoNSJW</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/51sDNLO+-RL._AC_SL1500_.jpg" alt="https://amzn.to/4vEyWbF" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4vEyWbF</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/815X+uYcJWL._AC_SL1500_.jpg" alt="https://amzn.to/3S2rR6o" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3S2rR6o</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/817F6u8tCOL._AC_SL1500_.jpg" alt="https://amzn.to/4vk0bsF" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4vk0bsF</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71YV5PPkUdL._AC_SL1500_.jpg" alt="https://amzn.to/4aaQdRR" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4aaQdRR</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61sK0811B4L._AC_SL1500_.jpg" alt="https://amzn.to/4aaQmET" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4aaQmET</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81dzU76rBwL._AC_SL1500_.jpg" alt="https://amzn.to/3RQ1S27" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3RQ1S27</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/51JFqMhRhXL._AC_SL1500_.jpg" alt="https://amzn.to/4e1px8q" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4e1px8q</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81R1wAdaG4L._AC_SL1500_.jpg" alt="https://amzn.to/3PPjSsQ" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3PPjSsQ</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81VP+Vv1M3L._AC_SL1500_.jpg" alt="https://amzn.to/4ejJdDr" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4ejJdDr</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81KxDl5CFiL._AC_SL1500_.jpg" alt="https://amzn.to/4un3OwB" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4un3OwB</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71dkuzY6P7L._AC_SL1500_.jpg" alt="https://amzn.to/4vzhBRr" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4vzhBRr</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/51rbfs0q96L._AC_SL1500_.jpg" alt="https://amzn.to/4vzsRxi" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4vzsRxi</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81XjI5EVByL._AC_SL1500_.jpg" alt="https://amzn.to/4xoN36Y" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4xoN36Y</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71dx8DvpV2L._AC_SL1500_.jpg" alt="https://amzn.to/4ecvEFv" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4ecvEFv</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61934eMUyZL._AC_SL1500_.jpg" alt="https://amzn.to/4e8IOn2" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4e8IOn2</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71erqSK++zL._AC_SL1500_.jpg" alt="https://amzn.to/4aiUyCk" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4aiUyCk</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/618V-H9ebYL._AC_SL1500_.jpg" alt="https://amzn.to/3SfjqVj" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3SfjqVj</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/51f00ZTK+ML._AC_SL1500_.jpg" alt="https://amzn.to/4eyhcsT" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4eyhcsT</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61DoHWkTTEL._AC_SL1500_.jpg" alt="https://amzn.to/4xfmTDD" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4xfmTDD</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71gD8Rg9q9L._AC_SL1500_.jpg" alt="https://amzn.to/4g8KO19" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4g8KO19</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61ITtyoZGnL._AC_SL1500_.jpg" alt="https://amzn.to/4eeXwJc" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4eeXwJc</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/519ac+nKn1L._AC_SL1500_.jpg" alt="https://amzn.to/43uvWTp" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/43uvWTp</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81yzQcnN4DL._AC_SL1500_.jpg" alt="https://amzn.to/4xhjfJ8" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4xhjfJ8</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71KLnPSa2aL._AC_SL1500_.jpg" alt="https://amzn.to/4eykT1F" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4eykT1F</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61pV9b6h5IL._AC_SL1500_.jpg" alt="https://amzn.to/4e0Bprh" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4e0Bprh</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71oIJ5+v+EL._AC_SL1500_.jpg" alt="https://amzn.to/4vCXLov" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4vCXLov</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61Pp125QvmL._AC_SL1500_.jpg" alt="https://amzn.to/4vBPeC6" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4vBPeC6</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81Fie2tMZsL._AC_SL1500_.jpg" alt="https://amzn.to/4xlx9tN" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4xlx9tN</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71oXLFcEv8L._AC_SL1500_.jpg" alt="https://amzn.to/4vIbKJV" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4vIbKJV</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/513eYBuVugL._AC_SL1000_.jpg" alt="https://amzn.to/4ecGj3f" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4ecGj3f</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/716QGN3kGhL._SL1500_.jpg" alt="https://amzn.to/4xjpKLv" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4xjpKLv</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61kpJhVvjPL._AC_SL1500_.jpg" alt="https://amzn.to/3RPKJFM" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3RPKJFM</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61h9tRRVIJL._AC_SL1500_.jpg" alt="https://amzn.to/4gbNP0J" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4gbNP0J</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61TuBwuFBOL._AC_SL1500_.jpg" alt="https://amzn.to/3SxeFqf" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3SxeFqf</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71+Xyv4JqCL._AC_SL1500_.jpg" alt="https://amzn.to/4fxa7d6" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4fxa7d6</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71Dnx-udbBL._AC_SL1500_.jpg" alt="https://amzn.to/43Yg5fX" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/43Yg5fX</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81uPIEu+kNL._AC_SL1500_.jpg" alt="https://amzn.to/4ejKsm5" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4ejKsm5</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71w2DSPrAnL._AC_SL1254_.jpg" alt="https://amzn.to/3QcTw3R" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3QcTw3R</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71FOx1cgBFL._AC_SL1500_.jpg" alt="https://amzn.to/4e0zyCD" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4e0zyCD</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81BbGU7KQqL._AC_SL1500_.jpg" alt="https://amzn.to/4gcrvE9" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4gcrvE9</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81KiYUzShBL._AC_SL1500_.jpg" alt="https://amzn.to/4e1K4tm" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4e1K4tm</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71xGF7PJxZL._AC_SL1500_.jpg" alt="https://amzn.to/4ez9nDe" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4ez9nDe</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61Dd2d0VCrL._AC_SL1500_.jpg" alt="https://amzn.to/4vFPQXz" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4vFPQXz</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71W9M8t1XAL._AC_SL1500_.jpg" alt="https://amzn.to/4eff8EK" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4eff8EK</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/717oEF5UqbL._AC_SL1500_.jpg" alt="https://amzn.to/4e9S6iz" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4e9S6iz</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/61+UpDHrViL._AC_SL1500_.jpg" alt="https://amzn.to/4fBYVvM" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4fBYVvM</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/711Ex3DZ6fL._AC_SL1500_.jpg" alt="https://amzn.to/4e1bS17" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4e1bS17</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71ggsQs3VKL._AC_SL1500_.jpg" alt="https://amzn.to/3RPMKSm" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3RPMKSm</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71xddTGDWuL._AC_SL1500_.jpg" alt="https://amzn.to/4xeG6oJ" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4xeG6oJ</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71kfqCP2J4L._AC_SL1500_.jpg" alt="https://amzn.to/4eeQi87" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4eeQi87</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71l4qVvnK5L._AC_SL1500_.jpg" alt="https://amzn.to/4ogsGV8" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4ogsGV8</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71vOEw3yctL._AC_SL1500_.jpg" alt="https://amzn.to/4alSucI" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4alSucI</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/718j-VsXeDL._AC_SL1500_.jpg" alt="https://amzn.to/4dZub6P" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4dZub6P</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/615wPI6uDFL._AC_SL1500_.jpg" alt="https://amzn.to/4g5NnkE" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4g5NnkE</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/716veMRTH8L._AC_SL1500_.jpg" alt="https://amzn.to/4v3vXdb" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4v3vXdb</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71gePyIFliL._AC_SL1500_.jpg" alt="https://amzn.to/4fwZC9J" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4fwZC9J</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71HyXhgPQ6L._AC_SL1500_.jpg" alt="https://amzn.to/3QwX1SY" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3QwX1SY</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71UmR-FNYhL._AC_SL1500_.jpg" alt="https://amzn.to/4e0wFlq" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4e0wFlq</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81BlD6WzpPL._AC_SL1500_.jpg" alt="https://amzn.to/43YykC1" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/43YykC1</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81zFi9C3r5L._AC_SL1500_.jpg" alt="https://amzn.to/4upHNNo" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4upHNNo</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/71NdV34X+YL._AC_SL1500_.jpg" alt="https://amzn.to/3RZeOme" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3RZeOme</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/91yp0UARaQL._AC_SL1500_.jpg" alt="https://amzn.to/4alRxBa" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4alRxBa</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/717A7XALS0L._AC_SL1500_.jpg" alt="https://amzn.to/3Q5SYgn" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3Q5SYgn</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/81MgrWRZO3L._AC_SL1500_.jpg" alt="https://amzn.to/4vw8tNq" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/4vw8tNq</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <a href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+        <div class="card-img"><img src="https://m.media-amazon.com/images/I/616GxmvUyYL._AC_SL1500_.jpg" alt="https://amzn.to/3PPnFGA" loading="lazy"></div>
+      </a>
+      <div class="card-body">
+        <p class="prod-name">https://amzn.to/3PPnFGA</p>
+        
+        <div class="price-row"></div>
+        
+        <a class="shop-btn" href="#" target="_blank" rel="nofollow noopener noreferrer sponsored">
+          Shop Now →
+        </a>
       </div>
     </div>
     </div>
   </section>
-  <section id="women-dresses" class="category-section">
-    <h2>👗 Women's Dresses & Jumpsuits</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vb1JVB" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61CSulJBS6L._AC_SL1500_.jpg" alt="LEPUNUO Rompers" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">LEPUNUO Rompers</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$11.24-14.99</span> <span class="reg-price"><s>$14.99-19.99</s></span> <span class="discount-badge">25% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>8S8WALQH</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vb1JVB" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4xf01nL" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81hAVlaRbEL._AC_SL1500_.jpg" alt="EKOUAER Rompers" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">EKOUAER Rompers</p>
-        <div class="stars">★★★★☆ 4.2</div>
-        <div class="price-row"><span class="sale-price">$9.99-12.49</span> <span class="reg-price"><s>$19.99-25.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>PAU8M4HB</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4xf01nL" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4dZ6sUj" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81PeAY--LRL._AC_SL1500_.jpg" alt="BKRIVE Womens Lace Neck Summer Dress" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">BKRIVE Womens Lace Neck Summer Dress</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$7.79-9.74</span> <span class="reg-price"><s>$11.99-16.99</s></span> <span class="discount-badge">35% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>A72AN8YW</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4dZ6sUj" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4fBB9Qy" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71g2RAm2vUL._AC_SL1500_.jpg" alt="EKOUAER Women Rompers" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">EKOUAER Women Rompers</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$12.99</span> <span class="reg-price"><s>$23.99-26.99</s></span> <span class="discount-badge">52% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>NZ6GPPVI</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4fBB9Qy" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3QwZj4z" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71blGrIEZRL._AC_SL1500_.jpg" alt="GRACE KARIN Women Summer Floral Dress" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">GRACE KARIN Women Summer Floral Dress</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$22.41-29.49</span> <span class="reg-price"><s>$44.82-58.98</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>SJGRZFOT</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3QwZj4z" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4xlf5jz" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/51yWGuuTFXL._AC_SL1500_.jpg" alt="GRACE KARIN Womens Summer Maxi Dress" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">GRACE KARIN Womens Summer Maxi Dress</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$18.5-20</span> <span class="reg-price"><s>$36.99-39.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>VZGFNDHA</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4xlf5jz" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4xiJdvN" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71B7e4SSuUL._AC_SL1500_.jpg" alt="SCARLET DARKNESS Women Corset Dress" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">SCARLET DARKNESS Women Corset Dress</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$19</span> <span class="reg-price"><s>$37.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>E3I5MO5I</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4xiJdvN" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4v10qZr" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71vkAHj8qkL._AC_SL1500_.jpg" alt="SCARLET DARKNESS Womens Floral Corset Sundress" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">SCARLET DARKNESS Womens Floral Corset Sundress</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$17.49</span> <span class="reg-price"><s>$49.99</s></span> <span class="discount-badge">65% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>6CBBSYS9</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4v10qZr" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4dXUNFg" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/51b0hSk-IoL._AC_SL1500_.jpg" alt="SCARLET DARKNESS Women Renaissance Corset Dress" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">SCARLET DARKNESS Women Renaissance Corset Dress</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$18.27-19.12</span> <span class="reg-price"><s>$42.99-44.99</s></span> <span class="discount-badge">58% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>BLH7JBRL</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4dXUNFg" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="sets-lounge" class="category-section">
-    <h2>🧦 Sets & Lounge</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4elNwhA" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/51aRWp77I3L._AC_SL1500_.jpg" alt="ANRABESS Lounge Sets" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">ANRABESS Lounge Sets</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$11.99</span> <span class="reg-price"><s>$19.99</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>K2KF865X</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4elNwhA" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ezixQ4" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61XvYjiispL._AC_SL1500_.jpg" alt="EKOUAER Womens Pajama Sets" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">EKOUAER Womens Pajama Sets</p>
-        <div class="stars">★★★★½ 4.6</div>
-        <div class="price-row"><span class="sale-price">$14.99</span> <span class="reg-price"><s>$27.99</s></span> <span class="discount-badge">46% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>FW4HIDSZ</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ezixQ4" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ewoYn8" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61IQO2H81BL._AC_SL1500_.jpg" alt="UNCLECAT Womens 2 Piece Lounge Sets" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">UNCLECAT Womens 2 Piece Lounge Sets</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$16.49</span> <span class="reg-price"><s>$29.99</s></span> <span class="discount-badge">45% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>YFC4TC9A</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ewoYn8" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vEyWbF" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/51sDNLO+-RL._AC_SL1500_.jpg" alt="BASETRY Sports and Fitness Bra" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">BASETRY Sports and Fitness Bra</p>
-        <div class="stars">★★★★☆ 4</div>
-        <div class="price-row"><span class="sale-price">$11.98</span> <span class="reg-price"><s>$19.98</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>GFDLCHKP</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vEyWbF" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/43uvWTp" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/519ac+nKn1L._AC_SL1500_.jpg" alt="脤F ME 10 PCS Gold Rings Set" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">脤F ME 10 PCS Gold Rings Set</p>
-        <div class="stars">★★★★☆ 4.1</div>
-        <div class="price-row"><span class="sale-price">$5.39-5.99</span> <span class="reg-price"><s>$8.99-9.99</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>SI5ZCBO5</strong></div>
-        <a class="shop-btn" href="https://amzn.to/43uvWTp" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4xhjfJ8" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81yzQcnN4DL._AC_SL1500_.jpg" alt="ASNEWS 13 Pcs Makeup Drawer Organizer Set" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">ASNEWS 13 Pcs Makeup Drawer Organizer Set</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$9.99-16.99</span> <span class="reg-price"><s>$19.99-33.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>OFKXHXIH</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4xhjfJ8" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vIbKJV" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71oXLFcEv8L._AC_SL1500_.jpg" alt="OMOZUN Spice Jars Set with Labels" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">OMOZUN Spice Jars Set with Labels</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$17.99-24.99</span> <span class="reg-price"><s>$35.99-49.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>UAHBSS3M</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vIbKJV" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4upHNNo" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81zFi9C3r5L._AC_SL1500_.jpg" alt="SKTMYY Magnetic Tiles Road Set" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">SKTMYY Magnetic Tiles Road Set</p>
-        <div class="stars">★★★★½ 4.7</div>
-        <div class="price-row"><span class="sale-price">$19.48</span> <span class="reg-price"><s>$38.97</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>GH3NP46R</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4upHNNo" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3RZeOme" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71NdV34X+YL._AC_SL1500_.jpg" alt="RIANCLUD Short Sets" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">RIANCLUD Short Sets</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★ 17</div>
-        <div class="price-row"><span class="sale-price">$17.99</span> <span class="reg-price"><s>$35.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>SLQ73N5H</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3RZeOme" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="bottoms" class="category-section">
-    <h2>👖 Bottoms</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3S2rR6o" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/815X+uYcJWL._AC_SL1500_.jpg" alt="ANRABESS Shorts" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">ANRABESS Shorts</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$4.99</span> <span class="reg-price"><s>$9.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>O4SI6J7F</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3S2rR6o" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vk0bsF" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/817F6u8tCOL._AC_SL1500_.jpg" alt="NITZANA Womens Denim Shorts" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">NITZANA Womens Denim Shorts</p>
-        <div class="stars">★★★★☆ 4.2</div>
-        <div class="price-row"><span class="sale-price">$19.79</span> <span class="reg-price"><s>$29.99</s></span> <span class="discount-badge">34% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>7SA5HM2D</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vk0bsF" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4aaQdRR" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71YV5PPkUdL._AC_SL1500_.jpg" alt="G GRADUAL Bermuda Long Shorts" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">G GRADUAL Bermuda Long Shorts</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$14.39</span> <span class="reg-price"><s>$27.99</s></span> <span class="discount-badge">48% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>TERRA9LV</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4aaQdRR" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4aaQmET" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61sK0811B4L._AC_SL1500_.jpg" alt="STANPETIX Women Wide Leg Sweatpants" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">STANPETIX Women Wide Leg Sweatpants</p>
-        <div class="stars">★★★★☆ 4.1</div>
-        <div class="price-row"><span class="sale-price">$7.79</span> <span class="reg-price"><s>$12.99</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>PVNV3DE4</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4aaQmET" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3RQ1S27" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81dzU76rBwL._AC_SL1500_.jpg" alt="SAMPEEL Wide Leg Pants" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">SAMPEEL Wide Leg Pants</p>
-        <div class="stars">★★★★★★★★★★★★ 12</div>
-        <div class="price-row"><span class="sale-price">$11.99</span> <span class="reg-price"><s>$29.99</s></span> <span class="discount-badge">60% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>42I9WE5J</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3RQ1S27" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4e1px8q" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/51JFqMhRhXL._AC_SL1500_.jpg" alt="WALIFREY Women Wide Leg Sweatpants" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">WALIFREY Women Wide Leg Sweatpants</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$5.99</span> <span class="reg-price"><s>$9.99</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>VVMIP72G</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4e1px8q" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ejJdDr" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81VP+Vv1M3L._AC_SL1500_.jpg" alt="G GRADUAL Men Athletic Shorts" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">G GRADUAL Men Athletic Shorts</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$12.91</span> <span class="reg-price"><s>$24.99</s></span> <span class="discount-badge">48% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>GE9CRMG9</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ejJdDr" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4un3OwB" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81KxDl5CFiL._AC_SL1500_.jpg" alt="SOOTHFEEL Running Shorts" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">SOOTHFEEL Running Shorts</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$12.95</span> <span class="reg-price"><s>$23.99</s></span> <span class="discount-badge">46% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>R2TKRJZM</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4un3OwB" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vzhBRr" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71dkuzY6P7L._AC_SL1500_.jpg" alt="PUDOLLA Running Gym Shorts" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">PUDOLLA Running Gym Shorts</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$12.79</span> <span class="reg-price"><s>$19.99</s></span> <span class="discount-badge">36% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>SGDV6GLQ</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vzhBRr" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="men" class="category-section">
-    <h2>👔 Men's</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4uqE822" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71fJ-ZGZ-wL._AC_SL1500_.jpg" alt="REORIA Womens Mesh Ruched Going Out Bodysuits" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">REORIA Womens Mesh Ruched Going Out Bodysuits</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$6.99</span> <span class="reg-price"><s>$24.97-29.97</s></span> <span class="discount-badge">77% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>RWKK6K7X</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4uqE822" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4e8IOn2" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61934eMUyZL._AC_SL1500_.jpg" alt="ATHLEFIT Womens Slip On Walking Tennis Shoes" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">ATHLEFIT Womens Slip On Walking Tennis Shoes</p>
-        <div class="stars">★★★★☆ 4.1</div>
-        <div class="price-row"><span class="sale-price">$19.99</span> <span class="reg-price"><s>$24.99</s></span> <span class="discount-badge">20% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>OKSCAR49</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4e8IOn2" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4eyhcsT" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/51f00ZTK+ML._AC_SL1500_.jpg" alt="KWHZXGYY Men Polarized Sunglasses" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">KWHZXGYY Men Polarized Sunglasses</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$4.99</span> <span class="reg-price"><s>$9.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>KWHZXGYY</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4eyhcsT" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4xfmTDD" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61DoHWkTTEL._AC_SL1500_.jpg" alt="GESRUNY Mens Modern TR90 Sunglasses" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">GESRUNY Mens Modern TR90 Sunglasses</p>
-        <div class="stars">☆☆☆☆☆ 0.0</div>
-        <div class="price-row"><span class="sale-price">$4.99-21.49</span> <span class="reg-price"><s>$9.99-42.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>GESRUNYSALE</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4xfmTDD" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="swimwear" class="category-section">
-    <h2>🩱 Swimwear</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3PPjSsQ" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81R1wAdaG4L._AC_SL1500_.jpg" alt="SILKWORLD Swimming Trunks" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">SILKWORLD Swimming Trunks</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$12.49-12.99</span> <span class="reg-price"><s>$24.99-25.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>SWALSUBT</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3PPjSsQ" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vzsRxi" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/51rbfs0q96L._AC_SL1500_.jpg" alt="KDWDVBN Girls Swimsuit" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">KDWDVBN Girls Swimsuit</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$8.99</span> <span class="reg-price"><s>$19.99</s></span> <span class="discount-badge">55% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>MLAIA8HF</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vzsRxi" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="shoes-accessories" class="category-section">
-    <h2>👟 Shoes & Accessories</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4xoN36Y" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81XjI5EVByL._AC_SL1500_.jpg" alt="GENERIC Leather Patch Hat" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">GENERIC Leather Patch Hat</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$12.49</span> <span class="reg-price"><s>$24.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>BBLKUDVM</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4xoN36Y" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ecvEFv" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71dx8DvpV2L._AC_SL1500_.jpg" alt="ATHLEFIT Platform Wedge Sandals" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">ATHLEFIT Platform Wedge Sandals</p>
-        <div class="stars">★★★★☆ 4</div>
-        <div class="price-row"><span class="sale-price">$17.99</span> <span class="reg-price"><s>$35.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>J8NNJWHO</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ecvEFv" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4aiUyCk" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71erqSK++zL._AC_SL1500_.jpg" alt="SINCESLIM Cotton Slippers" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">SINCESLIM Cotton Slippers</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 30</div>
-        <div class="price-row"><span class="sale-price">$8.99-9.49</span> <span class="reg-price"><s>$17.99-18.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>6VBNW8T5</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4aiUyCk" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3SfjqVj" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/618V-H9ebYL._AC_SL1500_.jpg" alt="VCARSIAN Retro Oval Cat Eye Sunglasses" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">VCARSIAN Retro Oval Cat Eye Sunglasses</p>
-        <div class="stars">★★★★½ 4.8</div>
-        <div class="price-row"><span class="sale-price">$6.49</span> <span class="reg-price"><s>$12.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>IXRAH9G7</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3SfjqVj" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4e0Bprh" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61pV9b6h5IL._AC_SL1500_.jpg" alt="SUNGAIT Sunglasses" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">SUNGAIT Sunglasses</p>
-        <div class="stars">★★★★½ 4.5</div>
-        <div class="price-row"><span class="sale-price">$6.96</span> <span class="reg-price"><s>$16.99</s></span> <span class="discount-badge">59% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>YREPAYPP</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4e0Bprh" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4fwZC9J" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71gePyIFliL._AC_SL1500_.jpg" alt="OFISPEED Tire Inflator" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">OFISPEED Tire Inflator</p>
-        <div class="stars">★★★★☆ 4.2</div>
-        <div class="price-row"><span class="sale-price">$9.99</span> <span class="reg-price"><s>$19.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>54KHJ6LU</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4fwZC9J" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3QwX1SY" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71HyXhgPQ6L._AC_SL1500_.jpg" alt="KIZINNO Tire Inflator" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">KIZINNO Tire Inflator</p>
-        <div class="stars">★★★★☆ 4</div>
-        <div class="price-row"><span class="sale-price">$11.99</span> <span class="reg-price"><s>$23.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>V5S6F3SC</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3QwX1SY" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="jewelry" class="category-section">
-    <h2>💍 Jewelry</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4g8KO19" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71gD8Rg9q9L._AC_SL1500_.jpg" alt="MUMREUES Gold Earrings" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">MUMREUES Gold Earrings</p>
-        <div class="stars">★★★★★★★★★★★★★★ 14</div>
-        <div class="price-row"><span class="sale-price">$4.99</span> <span class="reg-price"><s>$9.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>8BVGYSB73</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4g8KO19" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4eeXwJc" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61ITtyoZGnL._AC_SL1500_.jpg" alt="DOUBGOOD 5Pcs Gold Bracelets" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">DOUBGOOD 5Pcs Gold Bracelets</p>
-        <div class="stars">★★★★½ 4.7</div>
-        <div class="price-row"><span class="sale-price">$5.45</span> <span class="reg-price"><s>$12.99</s></span> <span class="discount-badge">58% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>RF4SIXCD</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4eeXwJc" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="beauty" class="category-section">
-    <h2>💄 Beauty</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4eykT1F" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71KLnPSa2aL._AC_SL1500_.jpg" alt="YIWANFW Makeup Organizer" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">YIWANFW Makeup Organizer</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$15.59-17.99</span> <span class="reg-price"><s>$29.99</s></span> <span class="discount-badge">48% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>38R88Z4G</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4eykT1F" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vBPeC6" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61Pp125QvmL._AC_SL1500_.jpg" alt="JUNESTERS Clear Makeup Bag" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">JUNESTERS Clear Makeup Bag</p>
-        <div class="stars">★★★★½ 4.6</div>
-        <div class="price-row"><span class="sale-price">$7.99-9.49</span> <span class="reg-price"><s>$15.99-18.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>VQZE67LX</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vBPeC6" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="bags-organizers" class="category-section">
-    <h2>👜 Bags & Organizers</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vCXLov" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71oIJ5+v+EL._AC_SL1500_.jpg" alt="WOOMADA Beach Tote Bag with Cooler" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">WOOMADA Beach Tote Bag with Cooler</p>
-        <div class="stars">★★★★★ 5</div>
-        <div class="price-row"><span class="sale-price">$20.99-22.99</span> <span class="reg-price"><s>$41.98-45.98</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>X8LFE4EG</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vCXLov" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4e1bS17" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/711Ex3DZ6fL._AC_SL1500_.jpg" alt="NBYSGO Outdoor Storage Box" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">NBYSGO Outdoor Storage Box</p>
-        <div class="stars">★★★★½ 4.5</div>
-        <div class="price-row"><span class="sale-price">$19.99</span> <span class="reg-price"><s>$33.31</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>AGT98DG7</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4e1bS17" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3RPMKSm" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71ggsQs3VKL._AC_SL1500_.jpg" alt="SUNALLY Rolling Storage Utility Cart" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">SUNALLY Rolling Storage Utility Cart</p>
-        <div class="stars">★★★★★★★★★★★★ 12</div>
-        <div class="price-row"><span class="sale-price">$38.99</span> <span class="reg-price"><s>$59.99</s></span> <span class="discount-badge">35% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>2EYQGINU</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3RPMKSm" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="kitchen-home" class="category-section">
-    <h2>🍳 Kitchen & Home</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ejKsm5" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81uPIEu+kNL._AC_SL1500_.jpg" alt="MONTVOO Kitchen Rugs Mat" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">MONTVOO Kitchen Rugs Mat</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$9.99-21.99</span> <span class="reg-price"><s>$19.99-43.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>89C9NAEW</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ejKsm5" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4eff8EK" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71W9M8t1XAL._AC_SL1500_.jpg" alt="PQH Portable Shower Caddy with Handle" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">PQH Portable Shower Caddy with Handle</p>
-        <div class="stars">★★★★★ 5</div>
-        <div class="price-row"><span class="sale-price">$5.99</span> <span class="reg-price"><s>$19.98</s></span> <span class="discount-badge">70% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>WSOV275B</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4eff8EK" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="fans-appliances" class="category-section">
-    <h2>🌀 Fans & Appliances</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3RPKJFM" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61kpJhVvjPL._AC_SL1500_.jpg" alt="LERAT Handheld Turbo Fan" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">LERAT Handheld Turbo Fan</p>
-        <div class="stars">★★★★½ 4.6</div>
-        <div class="price-row"><span class="sale-price">$7.94</span> <span class="reg-price"><s>$14.99</s></span> <span class="discount-badge">47% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>NWDZQJQK</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3RPKJFM" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4gbNP0J" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61h9tRRVIJL._AC_SL1500_.jpg" alt="YOSHENMO Desk Fan" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">YOSHENMO Desk Fan</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$12.97</span> <span class="reg-price"><s>$21.99</s></span> <span class="discount-badge">41% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>YF2JQWAZ</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4gbNP0J" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3SxeFqf" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61TuBwuFBOL._AC_SL1500_.jpg" alt="MORENTO Tower Fan" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">MORENTO Tower Fan</p>
-        <div class="stars">★★★★★ 5</div>
-        <div class="price-row"><span class="sale-price">$53.19</span> <span class="reg-price"><s>$101.99</s></span> <span class="discount-badge">48% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>RETVHXCX</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3SxeFqf" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/43Yg5fX" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71Dnx-udbBL._AC_SL1500_.jpg" alt="OUDDY MODE Portable Misting Quiet Table Fan" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">OUDDY MODE Portable Misting Quiet Table Fan</p>
-        <div class="stars">☆☆☆☆☆ 00</div>
-        <div class="price-row"><span class="sale-price">$11.99</span> <span class="reg-price"><s>$23.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>RZL83NPR</strong></div>
-        <a class="shop-btn" href="https://amzn.to/43Yg5fX" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4eeQi87" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71kfqCP2J4L._AC_SL1500_.jpg" alt="TRUCOZIE Mattress Vacuum Cleaner" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">TRUCOZIE Mattress Vacuum Cleaner</p>
-        <div class="stars">★★★★½ 4.5</div>
-        <div class="price-row"><span class="sale-price">$47.99</span> <span class="reg-price"><s>$119.99</s></span> <span class="discount-badge">60% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>QJ5HKXT3</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4eeQi87" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ogsGV8" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71l4qVvnK5L._AC_SL1500_.jpg" alt="ALLOYMOVE Cordless Vacuum Cleaner" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">ALLOYMOVE Cordless Vacuum Cleaner</p>
-        <div class="stars">★★★★★ 5</div>
-        <div class="price-row"><span class="sale-price">$59.99</span> <span class="reg-price"><s>$269.99</s></span> <span class="discount-badge">77% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>X4U7PS6Z</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ogsGV8" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="cleaning" class="category-section">
-    <h2>🧹 Cleaning</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ez9nDe" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71xGF7PJxZL._AC_SL1500_.jpg" alt="BELLALUCE Laundry Detergent Sheets" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">BELLALUCE Laundry Detergent Sheets</p>
-        <div class="stars">★★★★☆ 4.3</div>
-        <div class="price-row"><span class="sale-price">$12.59</span> <span class="reg-price"><s>$20.99</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>BXJTJPPH</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ez9nDe" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4xeG6oJ" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71xddTGDWuL._AC_SL1500_.jpg" alt="WOTASTE Steam Mop for Floor Cleaning" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">WOTASTE Steam Mop for Floor Cleaning</p>
-        <div class="stars">★★★★½ 4.7</div>
-        <div class="price-row"><span class="sale-price">$27.99</span> <span class="reg-price"><s>$49.99</s></span> <span class="discount-badge">44% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>WBV6RIOC</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4xeG6oJ" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="outdoor-sports" class="category-section">
-    <h2>⛺ Outdoor & Sports</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4e9S6iz" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/717oEF5UqbL._AC_SL1500_.jpg" alt="OUTSPURGE Outdoor Grill Cart" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">OUTSPURGE Outdoor Grill Cart</p>
-        <div class="stars">★★★★★ 5</div>
-        <div class="price-row"><span class="sale-price">$95.99</span> <span class="reg-price"><s>$159.99</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>HGII3PJF</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4e9S6iz" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3Q5SYgn" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/717A7XALS0L._AC_SL1500_.jpg" alt="ARESHARK 15Ft Fiberglass Patio Umbrellas" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">ARESHARK 15Ft Fiberglass Patio Umbrellas</p>
-        <div class="stars">★★★★★ 5</div>
-        <div class="price-row"><span class="sale-price">$79.99-84.99</span> <span class="reg-price"><s>$159.99-169.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>HOYFB8LA</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3Q5SYgn" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="auto" class="category-section">
-    <h2>🚗 Auto</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4g5NnkE" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/615wPI6uDFL._AC_SL1500_.jpg" alt="BITIANTEAM Windshield Sun Shade Umbrella" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">BITIANTEAM Windshield Sun Shade Umbrella</p>
-        <div class="stars">★★★★☆ 4.2</div>
-        <div class="price-row"><span class="sale-price">$9.99</span> <span class="reg-price"><s>$19.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>FQQLZTD2</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4g5NnkE" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4v3vXdb" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/716veMRTH8L._AC_SL1500_.jpg" alt="TSTITI 4000A Car Battery Jump Starter" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">TSTITI 4000A Car Battery Jump Starter</p>
-        <div class="stars">★★★★½ 4.6</div>
-        <div class="price-row"><span class="sale-price">$19.99</span> <span class="reg-price"><s>$49.99</s></span> <span class="discount-badge">60% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>8HCJLZL6</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4v3vXdb" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="misc" class="category-section">
-    <h2>🛒 Miscellaneous</h2>
-    <div class="cards-grid">
-      
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4xlx9tN" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81Fie2tMZsL._AC_SL1500_.jpg" alt="PETYDOOT 2.8L Electric Lunch Box" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">PETYDOOT 2.8L Electric Lunch Box</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$18.84-20.79</span> <span class="reg-price"><s>$35.99-39.99</s></span> <span class="discount-badge">47% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>JRIDLKD7</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4xlx9tN" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4ecGj3f" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/513eYBuVugL._AC_SL1000_.jpg" alt="YOEYOU Under Eye Red Light Therapy Device" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">YOEYOU Under Eye Red Light Therapy Device</p>
-        <div class="stars">★★★½☆ 3.7</div>
-        <div class="price-row"><span class="sale-price">$20.99</span> <span class="reg-price"><s>$69.99</s></span> <span class="discount-badge">70% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>N3K2234C</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4ecGj3f" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4xjpKLv" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/716QGN3kGhL._SL1500_.jpg" alt="DPFACE Red Light Mask" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">DPFACE Red Light Mask</p>
-        <div class="stars">☆☆☆☆☆ 00</div>
-        <div class="price-row"><span class="sale-price">$39.74</span> <span class="reg-price"><s>$79.49</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>QKKE6KU8</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4xjpKLv" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3QcTw3R" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71w2DSPrAnL._AC_SL1254_.jpg" alt="CHRIS.W Soccer Table Cloth 3Pcs" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">CHRIS.W Soccer Table Cloth 3Pcs</p>
-        <div class="stars">☆☆☆☆☆ 00</div>
-        <div class="price-row"><span class="sale-price">$3.99</span> <span class="reg-price"><s>$7.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>35Z9BN59</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3QcTw3R" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4e0zyCD" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71FOx1cgBFL._AC_SL1500_.jpg" alt="QZYL 4 Pcs 4th of July Tablecloths" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">QZYL 4 Pcs 4th of July Tablecloths</p>
-        <div class="stars">★★★★½ 4.6</div>
-        <div class="price-row"><span class="sale-price">$5.99</span> <span class="reg-price"><s>$14.99</s></span> <span class="discount-badge">60% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>HGSA4SOH</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4e0zyCD" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4gcrvE9" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81BbGU7KQqL._AC_SL1500_.jpg" alt="MELISHEER First Day Of School Chalkboard" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">MELISHEER First Day Of School Chalkboard</p>
-        <div class="stars">★★★★½ 4.6</div>
-        <div class="price-row"><span class="sale-price">$3.99</span> <span class="reg-price"><s>$7.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>Q8KQFBLV</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4gcrvE9" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4e1K4tm" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81KiYUzShBL._AC_SL1500_.jpg" alt="URNEEDS 2026-2027 Planner" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">URNEEDS 2026-2027 Planner</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ 59</div>
-        <div class="price-row"><span class="sale-price">$4.49</span> <span class="reg-price"><s>$8.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>SCCSDK9A</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4e1K4tm" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vFPQXz" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/61Dd2d0VCrL._AC_SL1500_.jpg" alt="FVZ Massage Gun Deep Tissue" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">FVZ Massage Gun Deep Tissue</p>
-        <div class="stars">★★★★☆ 4.2</div>
-        <div class="price-row"><span class="sale-price">$19.99</span> <span class="reg-price"><s>$39.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>BBPHDY7B</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vFPQXz" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4alSucI" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71vOEw3yctL._AC_SL1500_.jpg" alt="FUNWATER Paddle Board" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">FUNWATER Paddle Board</p>
-        <div class="stars">★★★★½ 4.5</div>
-        <div class="price-row"><span class="sale-price">$84.99-99.97</span> <span class="reg-price"><s>$169.99-199.95</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>E89SYED4</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4alSucI" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4dZub6P" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/718j-VsXeDL._AC_SL1500_.jpg" alt="FUNWATER Paddle Board" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">FUNWATER Paddle Board</p>
-        <div class="stars">★★★★½ 4.5</div>
-        <div class="price-row"><span class="sale-price">$79.97-89.99</span> <span class="reg-price"><s>$159.95-179.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>KTMJ7FMH</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4dZub6P" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4e0wFlq" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/71UmR-FNYhL._AC_SL1500_.jpg" alt="GENUVI 30 Pack Small Bubbles" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">GENUVI 30 Pack Small Bubbles</p>
-        <div class="stars">☆☆☆☆☆ 0.0</div>
-        <div class="price-row"><span class="sale-price">$5.99</span> <span class="reg-price"><s>$9.99</s></span> <span class="discount-badge">40% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>N63WKCFS</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4e0wFlq" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/43YykC1" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81BlD6WzpPL._AC_SL1500_.jpg" alt="ORZBB Mini Magnetic Tiles" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">ORZBB Mini Magnetic Tiles</p>
-        <div class="stars">★★★★☆ 4.4</div>
-        <div class="price-row"><span class="sale-price">$10.99</span> <span class="reg-price"><s>$49.99</s></span> <span class="discount-badge">78% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>78DORVZO</strong></div>
-        <a class="shop-btn" href="https://amzn.to/43YykC1" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4alRxBa" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/91yp0UARaQL._AC_SL1500_.jpg" alt="TAKYWEP Cabinet with Acrylic Doors" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">TAKYWEP Cabinet with Acrylic Doors</p>
-        <div class="stars">☆☆☆☆☆ 0.0</div>
-        <div class="price-row"><span class="sale-price">$79.99-89.99</span> <span class="reg-price"><s>$159.99-179.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>NPKZBFDC</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4alRxBa" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/4vw8tNq" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/81MgrWRZO3L._AC_SL1500_.jpg" alt="DOPPELTCHARMS Sideboard Buffet Cabinet 40鈥?50% off Code: P2LQP4Q5" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">DOPPELTCHARMS Sideboard Buffet Cabinet 40鈥?50% off Code: P2LQP4Q5</p>
-        <div class="stars">★★★★★ 5</div>
-        <div class="price-row"><span class="sale-price">$59.99</span> <span class="reg-price"><s>$119.99</s></span> <span class="discount-badge">50% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>P2LQP4Q5</strong></div>
-        <a class="shop-btn" href="https://amzn.to/4vw8tNq" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-
-    <div class="deal-card">
-      <div class="card-img"><a href="https://amzn.to/3PPnFGA" target="_blank" rel="noopener noreferrer"><img src="https://m.media-amazon.com/images/I/616GxmvUyYL._AC_SL1500_.jpg" alt="KISMILE 300W Cold Press Juicer" loading="lazy" onerror="this.style.display='none'"></a></div>
-      <div class="card-body">
-        <p class="product-name">KISMILE 300W Cold Press Juicer</p>
-        <div class="stars">★★★★★★★★★★★★★★★★★★★★★★ 22</div>
-        <div class="price-row"><span class="sale-price">$49.49</span> <span class="reg-price"><s>$109.99</s></span> <span class="discount-badge">55% OFF</span></div>
-        <div class="promo-badge">🏷️ Code: <strong>2GEYE5II</strong></div>
-        <a class="shop-btn" href="https://amzn.to/3PPnFGA" target="_blank" rel="noopener noreferrer">Shop Now →</a>
-      </div>
-    </div>
-    </div>
-  </section>
 
 
-  <section class="faq-section" id="faq">
-    <h2>❓ Frequently Asked Questions</h2>
-    <details><summary>How often are deals updated?</summary>
-      <p>This page is rebuilt automatically every day with the freshest Amazon deals and promo codes.</p>
-    </details>
-    <details><summary>Are these prices guaranteed?</summary>
-      <p>Prices and availability can change at any time on Amazon. Always verify the final price at checkout.</p>
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <details><summary>Are these deals updated daily?</summary>
+      <p>Yes! This page is automatically rebuilt every day with fresh deals sourced directly from Amazon.</p>
     </details>
     <details><summary>How do I use a promo code?</summary>
-      <p>Add the item to your cart, then enter the code in the <em>Gift cards &amp; promotional codes</em> box at checkout.</p>
+      <p>Click "Shop Now", add the item to your cart on Amazon, and enter the promo code shown at checkout before you pay.</p>
     </details>
-    <details><summary>Are these affiliate links?</summary>
-      <p>Yes. As an Amazon Associate we earn from qualifying purchases at no extra cost to you.</p>
+    <details><summary>Are all prices accurate?</summary>
+      <p>Prices are correct at the time this page was generated. Amazon prices can change at any time — always verify before purchasing.</p>
+    </details>
+    <details><summary>Do you earn a commission?</summary>
+      <p>Yes. We participate in the Amazon Associates program. Clicking our links earns us a small commission at no extra cost to you.</p>
+    </details>
+    <details><summary>How do I find deals in a specific category?</summary>
+      <p>Use the sticky navigation bar at the top to jump directly to any category section.</p>
     </details>
   </section>
 
+</main>
+
 <footer>
-  <p><strong>Affiliate Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases.
-  Clicking our links supports this site at no extra cost to you.</p>
-  <p>Prices and availability are subject to change. Always verify the final price on Amazon before purchasing.</p>
-  <p>© 2026 Amazon Deals Daily &nbsp;·&nbsp; <a href="https://cam444772-bot.github.io/amazon-deals/">https://cam444772-bot.github.io/amazon-deals/</a></p>
+  <p><strong>Affiliate Disclosure:</strong> As an Amazon Associate we earn from qualifying purchases.
+  Clicking our links may earn us a commission at no extra cost to you.
+  Prices and availability are accurate as of June 16, 2026 and are subject to change.</p>
+  <p style="margin-top:8px">© 2026 Daily Amazon Deals &nbsp;|&nbsp;
+  <a href="https://cam444772-bot.github.io/amazon-deals/">View Live Site</a></p>
 </footer>
 
 </body>
